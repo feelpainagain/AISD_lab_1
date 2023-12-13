@@ -9,7 +9,7 @@ int main() {
 	int e = 10;
 	Polynomial <int> a = (5);
 	cout << a << endl;
-	int* c = new int [3] {2, 4, 6};
+	int* c = new int [3] {4, 6, 8};
 	Polynomial <int> b(c, 3);
 	for (int i = 0; i < b.size(); i++) {
 		cout << i << ':' << b[i] << endl;
@@ -28,6 +28,14 @@ int main() {
 
 	int* f = new int [4] {2, 4, 6, 8};
 	Polynomial <int> h(f, 4);
+	int* f1 = new int[4] {2, 2, 2, 2};
+	Polynomial <int> h1(f1,4);
+	h1 =h * 5;
+	cout << 1345678 << endl;
+	cout << h << endl;
+	cout << h1 << endl;
+
+
 	cout << b + h << endl;
 
 	cout << d.calculation_Polynomial_x(2) << endl;
